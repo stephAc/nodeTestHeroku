@@ -1,0 +1,16 @@
+npm install -g nodemon
+//server monitor for instant update when files change
+// nodemon .\index.js pour le lancer
+//rs pour relancer le serveur
+
+npm install body-parser -save
+npm install express -save
+
+//create package.json
+npm init
+
+//Ejs pour embeded data
+npm install ejs
+
+//MongoDB
+npm install mongoose -save
