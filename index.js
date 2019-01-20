@@ -1,5 +1,5 @@
 //Express
-
+const PORT = process.env.PORT || 8080;
 var express = require('express');
 var app = express();
 var todoController = require('./Controller/todoController');
@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 //Listening to port
-app.listen(3000);
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 console.log('Listening');
 
 //Fire controller
